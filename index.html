@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>RÉSEAU</title>
+	<link rel="stylesheet" type="text/css" href="style/reset.css">
+	<link rel="stylesheet" type="text/css" href="style/main.css">
+	<link rel="stylesheet" type="text/css" href="style/reseau.css">
+	<link rel="stylesheet" type="text/css" href="style/animate.css">
+	<link rel="stylesheet" type="text/css" href="style/polices.css">
+	<link rel="icon" type="image/png" href="favicon.png" />
+</head>
+<body class="cursor3">
+		<div id="mps">0<!-- boucles par seconde --> 
+		</div>
+		<div id="interface" class="hidden">
+			<ul id="couleurs">
+			</ul>
+			<div id="display" onclick="displayInterface()" class=""></div>
+		</div>
+		<div id="reseau" onclick="if(colorClick<5)mouseClick(event)" onmousedown="if(colorClick==5)eraser(event)">
+			<canvas id="canvas"></canvas>
+		</div>
+
+<!-- _____________________________________________________________________________________________________ -->
+
+	<script type="text/javascript" src="script/detectBrowser.js"></script>
+	<script type="text/javascript" src="script/jquery.js"></script>
+
+	<script type="text/javascript" src="script/link.js"></script>
+
+	<script type="text/javascript" src="script/createNodeAutomatic.js"></script>
+	<script type="text/javascript" src="script/createNodeManual.js"></script>
+	<script type="text/javascript" src="script/reseau.js"></script>
+
+	<script type="text/javascript" src="script/interface.js"></script>
+	<script type="text/javascript" src="script/eraser.js"></script>
+</body>
+</html>
